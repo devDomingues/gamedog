@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.board {
+  width: 80%;
+  height: 500px;
+  border-bottom: 5px solid rgb(33, 112, 9);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #00a2ec, #e9eaeb);
+}
+
+
+.dog {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 35px;
+}
+
+.jump {
+  animation: jump-animation 500ms ;
+}
+
+.arbusto {
+  position: absolute;
+  width: 130px;
+  bottom: 0;
+  animation: arbusto-animation 1.5s infinite linear;
+}
+
+.arvore {
+  position: absolute;
+  width: 300px;
+  bottom: -22px;
+  animation: arvore-animation 10s linear infinite;
+}
+.nuvens {
+  position: absolute;
+  width: 450px;
+  animation: nuvens-animation 40s infinite linear;
+}
+
+@keyframes arbusto-animation {
+  from {
+    right: -130px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump-animation {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  70% {
+    bottom: 180px
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes nuvens-animation {
+ from {
+  right: -450px;
+ }
+ to {
+  right: 100%;
+ }
+}
+
+@keyframes arvore-animation {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 100%;
+  }
+}

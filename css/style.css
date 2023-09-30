@@ -49,6 +49,13 @@ body {
   animation: nuvens-animation 40s infinite linear;
 }
 
+.explosao {
+  display: none;
+  position: absolute;
+  left: 35px;
+  width: 100px;
+}
+
 @keyframes arbusto-animation {
   from {
     right: -130px;
@@ -70,9 +77,6 @@ body {
   }
   60% {
     bottom: 180px;
-  }
-  70% {
-    bottom: 180px
   }
   100% {
     bottom: 0;
